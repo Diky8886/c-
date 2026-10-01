@@ -25,7 +25,7 @@ jobs:
       - name: Compile C++ Program
         shell: msys2 {0}
         run: |
-          g++ main.cpp -o program.exe -static -static-libgcc -static-libstdc++
+          g++ dicky.cpp -o program.exe -static -static-libgcc -static-libstdc++
 
       - name: Upload EXE
         uses: actions/upload-artifact@v4
